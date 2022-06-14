@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Детальніше про тварину</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../css/pets.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a class="logo" href="../index.html">
+          <span>H</span>
+          <span>A</span>
+          <span>P</span>
+          <span>P</span>
+          <span>E</span>
+          <span>T</span>
+        </a>
+        <div class="nav-toggle"><span></span></div>
+        <div class="location"><p>&#128681; Львів</p></div>
+        <ul id="menu">
+          <li><a href="../pages/takepet.html">Дати притулок</a></li>
+          <li><a href="../pages/givepet.html">Віддати у притулок</a></li>
+          <li><a href="../pages/petduringwar.html">Тварини під час війни</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="widget">
+        <h3 class="widget-title">Інформація про тварину:</h3>
+        <div class="widget-posts-list" id="list">
+          <div class="post-image-small">
+            <a><img src="../images/pes1.jpg"></a>
+          </div>
+          <h4 class="widget-post-title">Ландиш</h4><br><br>
+          <p>Колір: Бежевий</p>
+          <p>Стать: Хлопчик</p>
+          <p>Вид: Собака</p>
+          <p>Вік: 4 місяця</p><br><br>
+          <p>Куратор: Irina Vendrakh</p><br>
+          <p><b>Зв'язатись з куратом цієї тварини:</b></p>
+          <button type="button" class="btn" id="butt1" onclick="location.href = 'mailto:alexandrurchak@gmail.com';">Написати</button><br><br><br>
+          <h4>Коротка історія:</h4><br>
+          <p>Милий Ландиш шукає нову родину. Його залишили у притулку перед початком війни.</p><br><br>
+          <h4>Характер:</h4><br>
+          <p>Ландиш дуже любить компанію, чудово ладнає з людьми та іншими собачками.</p><br><br>
+          <h4>Особливості поведінки:</h4><br>
+          <p>Спокійний, швидко вчится та запам'ятовує команди, привчений до вигулу.</p><br><br>
+          <h4>Побажання щодо пристрою:</h4><br>
+          <p>Не на ланцюг. Хлопчик створений для люблячої людини)</p><br><br>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-col"><span>Онлайн сервіс для адопції<br> та допомоги бездомним тваринам</span></div>
+        <div class="footer-col">
+          <div class="social-bar-wrap">
+            <a title="Facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a title="Pinterest" href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+            <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <a href="mailto:alexandrurchak@gmail.com">Надіслати лист</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $('.nav-toggle').on('click', function(){
+      $('#menu').toggleClass('active');
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Дати притулок</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../css/takepet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a class="logo" href="../index.html">
+          <span>H</span>
+          <span>A</span>
+          <span>P</span>
+          <span>P</span>
+          <span>E</span>
+          <span>T</span>
+        </a>
+        <div class="nav-toggle"><span></span></div>
+        <div class="location"><p>&#128681; Львів</p></div>
+        <ul id="menu">
+          <li><a onclick="location.reload()">Дати притулок</a></li>
+          <li><a href="givepet.html">Віддати у притулок</a></li>
+          <li><a href="petduringwar.html">Тварини під час війни</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="widget">
+        <h3 class="widget-title">Фільтрація:</h3>
+        <span class="custom-dropdown big">  
+          <select id="a">
+            <option value="Без вибору" selected>Вид: всі</option>  
+            <option value="a1">Собака</option>   
+            <option value="a2">Котик</option>  
+          </select> 
+        </span>
+        <span class="custom-dropdown big">  
+          <select id="b">   
+            <option value="" selected>Стать: всі</option>  
+            <option value="b1">Хлопчик</option>   
+            <option value="b2">Дівчинка</option>  
+          </select> 
+        </span>
+        <span class="custom-dropdown big">  
+          <select id="c">   
+            <option value="" selected>Колір: всі</option>  
+            <option value="c1">Сірий</option>   
+            <option value="c2">Білий</option>
+            <option value="c3">Бежевий</option>   
+            <option value="c4">Коричневий</option>
+            <option value="c5">Чорний</option>
+          </select> 
+        </span>
+        <span class="custom-dropdown big">  
+          <select id="d">   
+            <option value="" selected>Вік: всі</option>  
+            <option value="d1">Меньше року</option>   
+            <option value="d2">1-2 роки</option>
+            <option value="d3">2-3 роки</option>   
+            <option value="d4">3-4 роки</option>
+            <option value="d5">4-5 років</option>
+            <option value="d5">Більше 5 років</option>
+          </select> 
+        </span>
+      </div>
+      <div class="widget">
+        <h3 class="widget-title">В пошуках дому</h3>
+        <ul class="widget-posts-list" id="list">
+          <li onclick="location.href = '../pagespets/firstpet.html';">
+            <div class="post-image-small">
+              <a><img src="../images/pes1.jpg"></a>
+            </div>
+            <h4 class="widget-post-title">Ландиш</h4><br><br>
+            <p>Колір: Бежевий</p> 
+            <p>Стать: Хлопчик</p>
+            <p>Вид: Собака</p>
+            <p>Вік: <span>Меньше року</span> 4 місяця</p>
+          </li>
+          <li onclick="location.href = '../pagespets/secondpet.html';">
+            <div class="post-image-small">
+              <a><img src="../images/kot1.jpg"></a>
+            </div>
+            <h4 class="widget-post-title">Лейла</h4><br><br>
+            <p>Колір: Сірий</p> 
+            <p>Стать: Дівчинка</p>
+            <p>Вид: Котик</p>
+            <p>Вік: <span>Меньше року</span> 2 місяця</p>
+          </li>
+          <li onclick="location.href = '../pagespets/thirdpet.html';">
+            <div class="post-image-small">
+              <a><img src="../images/pes2.jpg"></a>
+            </div>
+            <h4 class="widget-post-title">Персик</h4><br><br>
+            <p>Колір: Білий</p> 
+            <p>Стать: Хлопчик</p>
+            <p>Вид: Собака</p>
+            <p>Вік: <span>1-2 роки</span> 1,6 років</p>
+          </li>
+          <li onclick="location.href = '../pagespets/4-thpet.html';">
+            <div class="post-image-small">
+              <a><img src="../images/kot2.jpg"></a>
+            </div>
+            <h4 class="widget-post-title">Буська</h4><br><br>
+            <p>Колір: Бежевий</p> 
+            <p>Стать: Дівчинка</p>
+            <p>Вид: Котик</p>
+            <p>Вік: <span>2-3 роки</span> 2,3 роки</p>
+          </li>
+          <li onclick="location.href = '../pagespets/5-thpet.html';">
+            <div class="post-image-small">
+              <a><img src="../images/pes3.png"></a>
+            </div>
+            <h4 class="widget-post-title">Марс</h4><br><br>
+            <p>Колір: Білий</p> 
+            <p>Стать: Хлопчик</p>
+            <p>Вид: Собака</p>
+            <p>Вік: <span>3-4 роки</span> 3,7 років</p>
+          </li>
+          <li onclick="location.href = '../pagespets/6-thpet.html';">
+            <div class="post-image-small">
+              <a><img src="../images/pes4.jpg"></a>
+            </div>
+            <h4 class="widget-post-title">Жужа</h4><br><br>
+            <p>Колір: Коричневий</p> 
+            <p>Стать: Дівчинка</p>
+            <p>Вид: Собака</p>
+            <p>Вік: <span>2-3 роки</span> 2,8 років</p>
+          </li>
+          <li onclick="location.href = '../pagespets/7-thpet.html';">
+            <div class="post-image-small">
+              <a><img src="../images/kot3.jpg"></a>
+            </div>
+            <h4 class="widget-post-title">Бублик</h4><br><br>
+            <p>Колір: Коричневий</p> 
+            <p>Стать: Хлопчик</p>
+            <p>Вид: Котик</p>
+            <p>Вік: <span>4-5 років</span> 4,5 років</p>
+          </li>
+          <li onclick="location.href = '../pagespets/8-thpet.html';">
+            <div class="post-image-small">
+              <a><img src="../images/pes5.jpg"></a>
+            </div>
+            <h4 class="widget-post-title">Лорд</h4><br><br>
+            <p>Колір: Бежевий</p> 
+            <p>Стать: Хлопчик</p>
+            <p>Вид: Собака</p>
+            <p>Вік: <span>4-5 років</span> 4,8 років</p>
+          </li>
+          <li onclick="location.href = '../pagespets/9-thpet.html';">
+            <div class="post-image-small">
+              <a><img src="../images/kot4.jpg"></a>
+            </div>
+            <h4 class="widget-post-title">Соната</h4><br><br>
+            <p>Колір: Сірий</p> 
+            <p>Стать: Дівчинка</p>
+            <p>Вид: Котик</p>
+            <p>Вік: <span>Меньше року</span> 3 місяця</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-col"><span>Онлайн сервіс для адопції<br> та допомоги бездомним тваринам</span></div>
+        <div class="footer-col">
+          <div class="social-bar-wrap">
+            <a title="Facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a title="Pinterest" href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+            <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <a href="mailto:alexandrurchak@gmail.com">Надіслати лист</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $('.nav-toggle').on('click', function(){
+      $('#menu').toggleClass('active');
+      });
+
+      var tr = document.querySelectorAll('#list li'),
+      sel = document.querySelectorAll('select');
+      sel.forEach(el=>el.onclick=e=>tr.forEach(el=>el.style.display = (el.textContent.includes(sel[0].options[sel[0].selectedIndex].textContent) || sel[0].selectedIndex==0) && (el.textContent.includes(sel[1].options[sel[1].selectedIndex].textContent) || sel[1].selectedIndex==0) && (el.textContent.includes(sel[2].options[sel[2].selectedIndex].textContent) || sel[2].selectedIndex==0) && (el.textContent.includes(sel[3].options[sel[3].selectedIndex].textContent) || sel[3].selectedIndex==0)?'inline-block':'none'));
+    </script>
+  </body>
+</html>

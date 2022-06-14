@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HAPPET</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a class="logo" onclick="location.reload()">
+          <span>H</span>
+          <span>A</span>
+          <span>P</span>
+          <span>P</span>
+          <span>E</span>
+          <span>T</span>
+        </a>
+        <div class="nav-toggle"><span></span></div>
+        <div class="location"><p>&#128681; Львів</p></div>
+        <ul id="menu">
+          <li><a href="pages/takepet.html">Дати притулок</a></li>
+          <li><a href="pages/givepet.html">Віддати у притулок</a></li>
+          <li><a href="pages/petduringwar.html">Тварини під час війни</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="posts-list">
+        <article id="post-1" class="post">
+          <div class="post-image"><a><img src="images/petsmain.jpg"></a></div>
+          <div class="post-content">
+            <div class="category"><a>Опис</a></div>
+            <h2 class="post-title">Що таке HAPPET?</h2>
+            <p>HAPPET – це некомерційний проект, спрямований на системне вирішення проблеми безпритульних тварин. Частиною проекту є сайт – безкоштовний всеукраїнський онлайн-сервіс для пошуку домашнього вихованця у притулках.<br><br>
+            За допомогою сайту можна:<br><br>
+
+              &#8226; вибрати і безкоштовно забрати тварину, що сподобалася (розділ «Дати притулок»);<br>
+              &#8226; розмістити інформацію про кішку або собаку, яка шукає будинок (розділ «Віддати у притулок»);<br>
+              &#8226; віддати під опіку собисту тваринку на вибраний вами термін, якщо змушені були покинути домівку (розділ «Тварини під час війни»).</p>
+            <div class="post-footer">
+              <a class="more-link">Продовжити знайомство</a>
+              <div class="post-social">
+                <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div id="post-2" class="post">
+          <div class="category"><a>Вигляд</a></div>
+          <h2 class="post-title">Вигляд наших притулків</h2>
+          <div class="all">
+            <input checked type="radio" name="respond" id="desktop">
+            <article id="slider">
+              <input checked type="radio" name="slider" id="switch1">
+              <input type="radio" name="slider" id="switch2">
+              <input type="radio" name="slider" id="switch3">
+              <div id="slides">
+                <div id="overflow">
+                  <div class="image">
+                    <article><img src="images/prytulok3.jpg"></article>
+                    <article><img src="images/prytulok2.jpg"></article>
+                    <article><img src="images/prytulok.jpg"></article>
+                  </div>
+                </div>
+              </div>
+              <div id="controls">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+              </div>
+              <div id="active">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+              </div>
+            </article>
+          </div>
+        </div>
+        <article id="post-3" class="post">
+          <div class="category"><a>Партнерство</a></div>
+          <h2 class="post-title">Наші партнери</h2>
+          <div class="partnersimages">
+            <a href="https://netpeak.group/" target="_blank"><img src="images/netpeak.jpg"></a>
+            <a href="https://gladpet.org/" target="_blank"><img src="images/gladpet.jpg"></a>
+            <a href="https://dogcat.com.ua/" target="_blank"><img src="images/sirius.jpg"></a>
+            <a href="https://esputnik.com/uk" target="_blank"><img src="images/esputnik.png"></a>
+          </div>
+        </article>
+      </div>
+
+      <aside>
+        <div class="widget">
+          <h3 class="widget-title">Що ви можете робити?</h3>
+          <ul class="widget-category-list">
+            <li><a href="pages/takepet.html">Дати притулок тваринці, обраною вами</a> &#10004;</li>
+            <li><a href="pages/givepet.html">Віддати в притулок тваринку</a> &#10004;</li>
+            <li><a href="pages/petduringwar.html">Залишити свого улюбленця в притулку на вибраний вами термін під час воєнного стану</a> &#10004;</li>
+          </ul>
+        </div>
+        <div class="widget">
+          <h3 class="widget-title">В пошуках дому</h3>
+          <ul class="widget-posts-list">
+            <li onclick="location.href = 'pagespets/firstpet.html';">
+              <div class="post-image-small">
+                <a><img src="images/pes1.jpg"></a>
+              </div>
+              <h4 class="widget-post-title">Ландиш</h4><br><br>
+              <p>Колір: Бежевий</p> 
+              <p>Стать: Хлопчик</p>
+              <p>Вид: Собака</p>
+              <p>Вік: <span>Меньше року</span> 4 місяця</p>
+            </li>
+            <li onclick="location.href = 'pagespets/secondpet.html';">
+              <div class="post-image-small">
+                <a><img src="images/kot1.jpg"></a>
+              </div>
+              <h4 class="widget-post-title">Лейла</h4><br><br>
+              <p>Колір: Сірий</p> 
+              <p>Стать: Дівчинка</p>
+              <p>Вид: Котик</p>
+              <p>Вік: <span>Меньше року</span> 2 місяця</p>
+            </li>
+            <li onclick="location.href = 'pagespets/thirdpet.html';">
+              <div class="post-image-small">
+                <a><img src="images/pes2.jpg"></a>
+              </div>
+              <h4 class="widget-post-title">Персик</h4><br><br>
+              <p>Колір: Білий</p> 
+              <p>Стать: Хлопчик</p>
+              <p>Вид: Собака</p>
+              <p>Вік: <span>1-2 роки</span> 1,6 років</p>
+            </li>
+            <li onclick="location.href = 'pagespets/4-thpet.html';">
+              <div class="post-image-small">
+                <a><img src="images/kot2.jpg"></a>
+              </div>
+              <h4 class="widget-post-title">Буська</h4><br><br>
+              <p>Колір: Бежевий</p> 
+              <p>Стать: Дівчинка</p>
+              <p>Вид: Котик</p>
+              <p>Вік: <span>2-3 роки</span> 2,3 роки</p>
+            </li>
+            <li onclick="location.href = 'pagespets/5-thpet.html';">
+              <div class="post-image-small">
+                <a><img src="images/pes3.png"></a>
+              </div>
+              <h4 class="widget-post-title">Марс</h4><br><br>
+              <p>Колір: Білий</p> 
+              <p>Стать: Хлопчик</p>
+              <p>Вид: Собака</p>
+              <p>Вік: <span>3-4 роки</span> 3,7 років</p>
+            </li>
+          </ul>
+          <p id="watchmore"><a href="pages/takepet.html">Дивитись усіх</a>&#8226;</p>
+        </div>
+        <div class="widget">
+          <h3 class="widget-title">Підписка на розсилку</h3>
+          <form action="" method="post" id="subscribe">
+            <input type="email" name="email" placeholder="Ваш email" required>
+            <button type="submit"><i class="fa fa-paper-plane-o"></i></button>
+          </form>
+        </div>
+      </aside>
+    </div> <!-- конец div class="container"-->
+
+    <footer>
+      <div class="container">
+        <div class="footer-col"><span>Онлайн сервіс для адопції<br> та допомоги бездомним тваринам</span></div>
+        <div class="footer-col">
+          <div class="social-bar-wrap">
+            <a title="Facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a title="Pinterest" href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+            <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <a href="mailto:alexandrurchak@gmail.com">Надіслати лист</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $('.nav-toggle').on('click', function(){
+      $('#menu').toggleClass('active');
+      });
+    </script>
+  </body>
+</html>

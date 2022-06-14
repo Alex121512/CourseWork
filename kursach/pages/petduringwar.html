@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тварини під час війни</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../css/petduringwar.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a class="logo" href="../index.html">
+          <span>H</span>
+          <span>A</span>
+          <span>P</span>
+          <span>P</span>
+          <span>E</span>
+          <span>T</span>
+        </a>
+        <div class="nav-toggle"><span></span></div>
+        <div class="location"><p>&#128681; Львів</p></div>
+        <ul id="menu">
+          <li><a href="takepet.html">Дати притулок</a></li>
+          <li><a href="givepet.html">Віддати у притулок</a></li>
+          <li><a onclick="location.reload()">Тварини під час війни</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="widget">
+        <h3 class="widget-title">Для кого створений цей розділ?</h3>
+        <h4 id="attention">УВАГА!</h4>
+        <p>В зв'язку з ситуацією в країні, <b>HAPPET</b> та наші партнери вирішили створити програму для допомоги домашнім улюбленцям тих людей, які змушені були покинути свою домівку в цей не мирний для всіх нас час. <br>Ми надаємо можливість таким людям залишити своїх улюбленців на вибраний ними термін у нашому притулку. <br>Якщо у вас немає можливості або ж умов для догляду за улюбленцем - <b>HAPPET</b> допоможе вам!</p>
+      </div>
+      <div class="widget">
+        <h3 class="widget-title">Заповніть відповідні поля:</h3>
+        <form id="forminp">
+          <h4>Інформація про власника:</h4>
+          Ім'я: <input type = "text"  name = "firstname" required> <br>
+          Прізвище: <input type = "text" name = "lastname" required> <br>
+          Електронна адреса: <input type="email" id="email" placeholder="Ваш поштовий адрес" required><br>
+          Номер телефону: <input type="tel" name="phone" placeholder="Ваш номер телефону" required><br><br>
+          <h4>Інформація про тварину:</h4>
+          Ім'я: <input type = "text"  name = "firstname" required> <br>
+          Вид: <input type="text" required><br>
+          Хлопчик <input  type = "radio" name = "sex"value = "petmale" checked>
+          Дівчинка <input type = "radio" name = "sex"value =  "petfemale"> <br>
+          Вік: <input type="text" required><br>
+          Колір: <input type="color" required><br>
+          Особливості(поведінка, вподобання і тд.): <input type = "text"  name = "features"> <br>
+          Діапазон терміну перебування тварини:<br>
+          Початок: <input type="date" id="datestart" name="datestart" required><br>
+          Кінець: <input type="date" id="datefinish" name="datefinish" required><br>
+          <input id="lastbut" type = "submit" name = "submit" value = "Відправити">
+        </form>
+      </div>
+    </div> 
+
+    <footer>
+      <div class="container">
+        <div class="footer-col"><span>Онлайн сервіс для адопції<br> та допомоги бездомним тваринам</span></div>
+        <div class="footer-col">
+          <div class="social-bar-wrap">
+            <a title="Facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a title="Pinterest" href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+            <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <a href="mailto:alexandrurchak@gmail.com">Надіслати лист</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $('.nav-toggle').on('click', function(){
+      $('#menu').toggleClass('active');
+      });
+
+      let object = document.getElementById('forminp'); 
+
+      object.onsubmit = function() {
+        let todays = new Date();
+        //console.log(todays.getDate() + ":" + todays.getMonth() + 1);
+        let sdate = document.getElementById("datestart").value;
+        let fdate = document.getElementById("datefinish").value;
+        
+        let startdate = new Date(sdate);
+        let finishdate = new Date(fdate);
+        if (startdate.getDate() >= todays.getDate() && startdate.getMonth() >= todays.getMonth() && startdate.getYear() >= todays.getYear() && finishdate.getDate() >= startdate.getDate() && finishdate.getMonth() >= startdate.getMonth() && finishdate.getYear() >= startdate.getYear()){
+        } else {
+          document.getElementById("datestart").value = "";
+          document.getElementById("datefinish").value = "";
+          alert("Діапазон терміну перебування тварини введений неправильно!");
+          return false;
+        }
+      };
+    </script>
+  </body>
+</html>
